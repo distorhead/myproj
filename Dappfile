@@ -1,4 +1,6 @@
 dimg do
+  docker.from 'ubuntu:16.04'
+
   git do
     add('/') {to '/app'}
   end
