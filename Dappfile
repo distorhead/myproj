@@ -1,0 +1,5 @@
+dimg do
+  git do
+    add('/') {to '/app'}
+  end
+end
