@@ -1,7 +1,15 @@
-dimg do
+dimg_group do
   docker.from 'ubuntu:16.04'
 
   git do
     add('/') {to '/app'}
+  end
+
+  dimg 'a' do
+    docker.label helo: 'a'
+  end
+
+  dimg 'b' do
+    docker.label helo: 'b'
   end
 end
